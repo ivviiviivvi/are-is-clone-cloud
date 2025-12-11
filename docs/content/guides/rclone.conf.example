@@ -1,0 +1,64 @@
+# Example rclone configuration for Personal Knowledge Base
+# Copy this to ~/.config/rclone/rclone.conf and update with your credentials
+
+# iCloud Drive Remote
+[icloud]
+type = iclouddrive
+# Follow the authentication prompts when running rclone config
+# The actual authentication tokens will be added here automatically
+
+# Dropbox Remote
+[dropbox]
+type = dropbox
+# OAuth2 token will be automatically added during configuration
+
+# Google Drive Remote
+[gdrive]
+type = drive
+scope = drive
+# OAuth2 token will be automatically added during configuration
+
+# OneDrive Remote
+[onedrive]
+type = onedrive
+# Choose "OneDrive Personal" when prompted
+# OAuth2 token will be automatically added during configuration
+
+# Union Remote - Unified view of all cloud storage
+[knowledge-base-unified]
+type = union
+upstreams = icloud:KnowledgeBase dropbox:KnowledgeBase gdrive:KnowledgeBase onedrive:KnowledgeBase
+action_policy = epall
+create_policy = epmfs
+search_policy = ff
+
+# Combine Remote - Organized directory structure
+[knowledge-base-combined]
+type = combine
+upstreams = icloud=icloud:KnowledgeBase dropbox=dropbox:KnowledgeBase google=gdrive:KnowledgeBase microsoft=onedrive:KnowledgeBase
+
+# Encrypted Remote for Sensitive Data
+[knowledge-base-encrypted]
+type = crypt
+remote = icloud:KnowledgeBase/Private
+# Run 'rclone config' to set up passwords interactively
+# password = [obscured]
+# password2 = [obscured]
+filename_encryption = standard
+directory_name_encryption = true
+
+# Read-only backup remote example
+[backup-readonly]
+type = union
+upstreams = dropbox:KnowledgeBase/Backup-iCloud:ro gdrive:KnowledgeBase/Backup-iCloud:ro
+action_policy = all
+create_policy = epmfs
+search_policy = ff
+
+# Example local cache remote
+[knowledge-base-cache]
+type = cache
+remote = knowledge-base-unified:
+chunk_size = 10M
+info_age = 48h
+chunk_total_size = 10G
