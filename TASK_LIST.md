@@ -4,6 +4,18 @@
 **Document Date:** 2025-11-18
 **Associated Roadmap:** PRODUCT_ROADMAP.md v1.0
 
+## Organization & Repository Context
+
+**Organization:** [ivviiviivvi](https://github.com/ivviiviivvi)  
+**Repository:** [are-is-clone-cloud](https://github.com/ivviiviivvi/are-is-clone-cloud)  
+**Fork of:** [rclone/rclone](https://github.com/rclone/rclone)
+
+This task list is customized for the ivviiviivvi organization's needs and repositories, with special focus on:
+- 🎯 **Priority Cloud Providers**: Google Drive, OneDrive, Dropbox, iCloud Drive
+- 🏢 **Organization Integration**: Seamless integration with organization workflows
+- 📦 **Repository Management**: Tasks applicable across organization repositories
+- 🔐 **Security & Compliance**: Organization-specific requirements
+
 ---
 
 ## Table of Contents
@@ -67,6 +79,54 @@ This task list complements the Product Roadmap by providing granular, actionable
 | P1-BE-003 | Improve multipart upload performance | P1 | M | Performance Team | 2x throughput for files >100MB |
 | P1-BE-004 | Add S3 batch operations support | P2 | L | Backend Team | Can execute batch delete/copy operations |
 | P1-BE-005 | Implement S3 Object Lambda integration | P3 | L | Backend Team | Support for Object Lambda transformations |
+
+#### 🎯 Priority: Google Drive Enhancements
+
+| ID | Task | Priority | Effort | Owner | Success Criteria |
+|----|------|----------|--------|-------|------------------|
+| P1-BE-101 | Optimize shared drive performance | P0 | M | Backend Team | 50% faster shared drive sync |
+| P1-BE-102 | Add Google Workspace integration | P1 | L | Backend Team | Full support for Workspace features |
+| P1-BE-103 | Implement Drive shortcuts support | P1 | M | Backend Team | Shortcuts sync correctly |
+| P1-BE-104 | Add native Google Docs export | P2 | M | Backend Team | Export Docs/Sheets/Slides to standard formats |
+| P1-BE-105 | Improve large folder handling | P0 | M | Performance Team | Handle folders with 10,000+ files efficiently |
+| P1-BE-106 | Add version history access | P2 | M | Backend Team | Can access and restore file versions |
+| P1-BE-107 | Implement Drive API v3 optimizations | P1 | M | Backend Team | Use latest API features for better performance |
+
+#### 🎯 Priority: Microsoft OneDrive Enhancements
+
+| ID | Task | Priority | Effort | Owner | Success Criteria |
+|----|------|----------|--------|-------|------------------|
+| P1-BE-108 | Optimize SharePoint Online sync | P0 | M | Backend Team | SharePoint sync as fast as personal OneDrive |
+| P1-BE-109 | Add OneDrive for Business features | P1 | L | Backend Team | Full business account support |
+| P1-BE-110 | Implement delta API improvements | P1 | M | Backend Team | Use delta API for incremental syncs |
+| P1-BE-111 | Add shared folder support | P1 | M | Backend Team | Shared folders sync correctly |
+| P1-BE-112 | Improve large file upload | P0 | M | Performance Team | Reliable uploads for files >10GB |
+| P1-BE-113 | Add version history management | P2 | M | Backend Team | Access and manage file versions |
+| P1-BE-114 | Implement Microsoft Graph API updates | P1 | M | Backend Team | Use latest Graph API features |
+
+#### 🎯 Priority: Dropbox Enhancements
+
+| ID | Task | Priority | Effort | Owner | Success Criteria |
+|----|------|----------|--------|-------|------------------|
+| P1-BE-115 | Optimize team folder sync | P0 | M | Backend Team | Team folders sync efficiently |
+| P1-BE-116 | Add Dropbox Business features | P1 | L | Backend Team | Full business account support |
+| P1-BE-117 | Implement selective sync improvements | P1 | M | Backend Team | Better selective sync performance |
+| P1-BE-118 | Add paper document export | P2 | M | Backend Team | Export Dropbox Paper documents |
+| P1-BE-119 | Improve shared link handling | P2 | S | Backend Team | Shared links work correctly |
+| P1-BE-120 | Add file request support | P3 | M | Backend Team | Support for file requests |
+| P1-BE-121 | Implement API v2 optimizations | P1 | M | Backend Team | Use latest API features |
+
+#### 🎯 Priority: iCloud Drive Enhancements
+
+| ID | Task | Priority | Effort | Owner | Success Criteria |
+|----|------|----------|--------|-------|------------------|
+| P1-BE-122 | Optimize authentication flow | P0 | M | Backend Team | Simplified 2FA authentication |
+| P1-BE-123 | Add iCloud Photos integration | P1 | L | Backend Team | Sync photos with metadata |
+| P1-BE-124 | Improve file download performance | P0 | M | Performance Team | 2x faster downloads |
+| P1-BE-125 | Add shared folder support | P1 | M | Backend Team | Shared folders sync correctly |
+| P1-BE-126 | Implement app-specific folder access | P2 | M | Backend Team | Access app-specific folders |
+| P1-BE-127 | Add large file handling improvements | P0 | M | Performance Team | Reliable large file operations |
+| P1-BE-128 | Improve error handling and retries | P1 | M | Backend Team | Better resilience to API issues |
 
 #### Google Cloud Storage
 

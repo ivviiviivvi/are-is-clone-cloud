@@ -5,6 +5,21 @@
 **Document Date:** 2025-11-18
 **Project Status:** Production-Ready / Mature
 
+## Organization & Repository Applicability
+
+**Organization:** [ivviiviivvi](https://github.com/ivviiviivvi)  
+**Repository:** [are-is-clone-cloud](https://github.com/ivviiviivvi/are-is-clone-cloud)  
+**Fork of:** [rclone/rclone](https://github.com/rclone/rclone)
+
+This roadmap applies to the **ivviiviivvi organization** and its repositories, providing strategic direction for:
+- 🏢 Organization-wide cloud storage strategy and adoption
+- 📦 Repository-specific implementation and customization
+- 🔄 Integration with existing organization workflows and tools
+- 🎯 Alignment with organization priorities and cloud provider preferences
+- 🔐 Organization-specific security, compliance, and governance requirements
+
+The roadmap prioritizes features and improvements most relevant to the organization's needs while maintaining compatibility with the upstream rclone project.
+
 ---
 
 ## Table of Contents
@@ -35,6 +50,22 @@ Rclone is a mature, production-ready command-line program for syncing files and 
 - **Community Growth**: Expanding contributor base
 - **Enterprise Readiness**: Advanced features for business use
 - **Ecosystem Development**: Integrations and partnerships
+
+### Priority Cloud Storage Providers
+
+This roadmap places **special emphasis** on ensuring world-class support, performance, and feature completeness for the most widely-used consumer and enterprise cloud storage platforms:
+
+- 🎯 **Google Drive** (`backend/drive/`) - Full support for personal, business, and shared drives
+- 🎯 **Microsoft OneDrive** (`backend/onedrive/`) - Personal, business, and SharePoint integration
+- 🎯 **Dropbox** (`backend/dropbox/`) - Personal and business account support
+- 🎯 **iCloud Drive** (`backend/iclouddrive/`) - Native Apple ecosystem integration
+
+These priority providers receive:
+- ✅ Enhanced testing and quality assurance
+- ✅ Performance optimization for common use cases
+- ✅ Priority bug fixes and feature requests
+- ✅ Comprehensive documentation and examples
+- ✅ Regular compatibility testing with provider API updates
 
 **Key Priorities:**
 1. Maintain backward compatibility and stability
